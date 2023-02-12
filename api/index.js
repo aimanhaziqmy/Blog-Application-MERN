@@ -15,7 +15,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 const salt = bcrypt.genSaltSync(10);
 const secret = 'faohfapofpoanfapokopakpoa'
 
-mongoose.connect("mongodb+srv://newAccess:xFsHM2gclPMKaY0L@cluster0.kvqqu.gcp.mongodb.net/user?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://newAccess:<password>@cluster0.kvqqu.gcp.mongodb.net/user?retryWrites=true&w=majority")
 
 app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 app.use(express.json())

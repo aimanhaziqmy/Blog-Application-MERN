@@ -24,7 +24,7 @@ function Index() {
   }
   return (
     <header>
-      <Link to="/" className="logo">Aiman's Blob</Link>
+      <Link to="/" className="logo">Welcome to my blog</Link>
       <nav>
         {username && (<>
         <span>Hi, {userInfo.username}</span>
